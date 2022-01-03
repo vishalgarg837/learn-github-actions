@@ -15,6 +15,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Build ${{ env.FILE_NAME }} for ubuntu-latest
+      run: mv ${{ env.FILE_NAME }}.go /home/runner/go/src/
       run: go build ${{ env.FILE_NAME }}.go
 
     - name: Build ${{ env.FILE_NAME }} for windows-latest
