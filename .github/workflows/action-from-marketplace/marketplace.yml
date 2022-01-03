@@ -3,7 +3,8 @@ name: Python application
 on: [push]
 
 jobs:
-  build:   
+  build:
+    name: Python Syntax Checker 
     runs-on: ubuntu-latest
     steps:
     - name: Check out the code
