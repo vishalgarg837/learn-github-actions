@@ -16,6 +16,7 @@ jobs:
 
     - name: Build ${{ env.FILE_NAME }} for ubuntu-latest
       run: |
+	echo $GOPATH $HOME
         mv ${{ env.FILE_NAME }}.go /home/runner/go/src/
         go build ${{ env.FILE_NAME }}.go
 
