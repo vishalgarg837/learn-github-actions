@@ -4,7 +4,7 @@ on: push
 
 jobs:
     job1:
-	name: 1st Job
+	name: First Job
 	runs-on: ubuntu-latest
 	steps:
 	    - name: Step 1
@@ -12,7 +12,7 @@ jobs:
 	    - name: Step 2
 	      run: env | sort
     job2:
-	name: 2nd Job
+	name: Second Job
 	runs-on: windows-latest
 	steps:
 	    - name: Step 1
