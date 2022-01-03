@@ -1,0 +1,37 @@
+name: first_challenge
+
+on: push
+
+jobs:
+    job1:
+        name: First Job
+        runs-on: ubuntu-latest
+        steps:
+        - name: Step One
+          uses: actions/checkout@v2
+        - name: Step Two
+          run: "echo date"
+    job2:
+        name: Second Job
+        runs-on: windows-latest
+        steps:
+        - name: Step One
+          uses: actions/checkout@v2
+        - name: Step Two
+          run: "date /t"
+    job3:
+        name: Third Job
+        runs-on: macos-latest
+        steps:
+        - name: Step One
+          uses: actions/checkout@v2
+        - name: Step Two
+          run: "echo date"
+    job4:
+        name: Fourth Job
+        runs-on: ubuntu-latest
+        steps:
+        - name: Step One
+          uses: actions/checkout@v2
+        - name: Step Two
+          run: "echo date"
