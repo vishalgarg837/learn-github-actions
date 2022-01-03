@@ -16,7 +16,7 @@ jobs:
 
     - name: Build ${{ env.FILE_NAME }} for ubuntu-latest
       run: |
-	echo $GOPATH $HOME
+        echo $GOPATH
         go build ${{ env.FILE_NAME }}.go
 
     - name: Build ${{ env.FILE_NAME }} for windows-latest
